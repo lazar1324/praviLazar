@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    
+    <script>
+    
+    function izracunajPovrsinu () {
+    var stranica = document.getElementById("stranica").value;
+    var stranica2 = document.getElementById("stranica2").value;
+    alert (" Povrsina pravougaonika je " + (stranica * stranica2) + " cm2");   
+    }
+    
+    function izracunajObim () {
+    var stranica = document.getElementById("stranica").value;
+    var stranica2 = document.getElementById("stranica2").value;
+    alert (" Obim pravougaonika je " + 2 * (parseInt(stranica) + parseInt(stranica2)) + " cm");    
+    }
+        
+    </script>
+    
+    </head>
+
+<body>
+    
+    <h2> Forma za izracunavanje povrsine i obima pravougaonika </h2>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rectangle.svg/400px-Rectangle.svg.png">
+    
+    <p> Unesi duzinu stranice pravougaonika </p>
+    <input type="number" id="stranica">
+    <br>   <br>
+    <input type="number" id="stranica2">
+    <br>   <br>
+    <button onclick="izracunajPovrsinu ()"> Izracunaj povrsinu </button>
+    <br>   <br>
+    <button onclick="izracunajObim ()"> Izracunaj obim </button>
+    </body>
+    
+</html>

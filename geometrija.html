@@ -1,0 +1,101 @@
+<html>
+
+    <head>
+    
+        <title> Geometrija HTML </title>
+        
+        <style>
+        
+            body{
+                background-color: bisque
+            }
+            
+            h1{
+                background-color: blue;
+                width: 50%;
+                margin: 10px;
+                padding: 20px;
+                color: azure;
+            }
+        
+
+            
+        </style>
+        
+        <script>
+        
+           function izracunajPovrsinu(){
+               var stranica = document.getElementById("stranica").value;
+               alert ("Povrsina kvadrata je " + (stranica * stranica) + " cm2");
+           }
+        
+           function izracunajObim(){
+           var a = document.getElementById("stanica").value;
+               alert (" Obim iznosi " + (a * 4) + " cm " );
+               
+           }
+            
+            function izracunajPovrsinu2(){
+                var a = document.getElementById("stranica2").value;
+                var b = document.getElementById("stranica3").value;
+                alert ("Povrsina je " + (a * b) + " cm2");
+            }
+            
+            function izracunajObim2(){
+                var a = document.getElementById("stranica2");
+                var b = document.getElementById("stranica3");
+                alert ("Obim je " + 2 * (parseInt(a) + parseInt(b)) + " cm");
+            }
+            
+        </script>
+    
+    </head>
+
+    <body>
+    
+        <h1> KVADRAT I PRAVUGAONIK</h1>
+    
+        <h2> Forma za izracunavanje povrsine i obima kvadrata</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Square-marked.svg/200px-Square-marked.svg.png">
+        
+       <p> Unesite duzinu stranice kvadrata </p>
+    
+        <input type="number" id="stranica"> <br>
+        
+        <button onclick="izracunajPovrsinu()">Izracunaj povrsinu</button>
+        
+        <button onclick="izracunajObim()">Izracunaj obim</button>  
+        
+        <hr color="blue">
+    
+        <h2> Forma za izracunavanje povrsine i obima pravougaonika </h2>
+        
+        <img src="https://formule.pismenizadaci.com/Images/pravougaonik_11.png">
+        
+        <p> Unesite duzinu stranica pravougaonika </p>   
+        
+        <p> unesite stranicu a </p>
+        
+        <input type="number" id="stranica2">
+        <br>
+        
+        <p> unesite stranicu b </p>
+        
+        
+        <input type="number" id="stranica3">
+       
+        <br>
+        <br>
+        
+        <button onclick="izracunajPovrsinu2()"> Izracunaj povrsinu </button>
+        
+        <br>
+        <br>
+        
+        <button onclick="izracunajObim2()"> Izracunaj obim </button>
+        
+        
+    </body>
+
+</html>
